@@ -44,7 +44,7 @@ IAM is not a beginner topic — which is exactly why it's such a strong portfoli
 ## 🏗️ Architecture Diagram
 
 <p align="center">
-  <img src="assets_iam/org_architecture.svg" alt="ApexPay AWS Organization Cross-Account Architecture" width="850">
+  <img src="new add/org_architecture.svg" alt="ApexPay AWS Organization Cross-Account Architecture" width="850">
 </p>
 
 | Account | Purpose |
@@ -59,7 +59,7 @@ IAM is not a beginner topic — which is exactly why it's such a strong portfoli
 ## 🔄 The Role Assumption Flow
 
 <p align="center">
-  <img src="assets_iam/role_assumption_flow.svg" alt="Cross-Account Role Assumption Sequence Diagram" width="850">
+  <img src="new add/role_assumption_flow.svg" alt="Cross-Account Role Assumption Sequence Diagram" width="850">
 </p>
 
 1. User/role authenticates in the Security Account **with MFA**
@@ -156,7 +156,7 @@ Scope to exactly the API calls the role needs to do its job — nothing broader 
 ## 📈 How Would This Scale?
 
 <p align="center">
-  <img src="assets_iam/scaling_ous.svg" alt="Scaling Cross-Account Access with AWS Organizations OUs" width="850">
+  <img src="new add/scaling_ous.svg" alt="Scaling Cross-Account Access with AWS Organizations OUs" width="850">
 </p>
 
 At scale — 20, 100+ accounts — individual role-by-role setup breaks down. The pattern becomes:
@@ -170,7 +170,7 @@ At scale — 20, 100+ accounts — individual role-by-role setup breaks down. Th
 ## 🧨 Blast Radius: Why Scoping Matters
 
 <p align="center">
-  <img src="assets_iam/blast_radius_comparison.svg" alt="Blast Radius Comparison — Over-Privileged vs Properly Scoped Role" width="900">
+  <img src="new add/blast_radius_comparison.svg" alt="Blast Radius Comparison — Over-Privileged vs Properly Scoped Role" width="900">
 </p>
 
 The entire argument for least privilege in one picture: an over-privileged role, once compromised, gives an attacker the keys to the whole account — deletion, exfiltration, backdoors, cross-account pivoting, and log tampering. A properly scoped role gives them almost nothing.
